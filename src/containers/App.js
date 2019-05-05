@@ -12,7 +12,7 @@ import FormControl from "@material-ui/core/FormControl";
 
 import CustomizedSnackbars from "../components/Snackbars/snackBarWarning";
 
-const apikey = "&APPID=b35ee9ff282b0bff6ede1a8c70884b5c";
+const API_KEY = "&APPID=" + process.env.REACT_APP_WEATHER_API_KEY;
 axios.defaults.baseURL = "http://api.openweathermap.org/data/2.5";
 const weatherIconBaseURL = "http://openweathermap.org/img/w/";
 const CELCIUS = "Celcius";
@@ -21,9 +21,6 @@ const WARNING = "warning";
 const WARNING_MESSAGE = "Invalid entry";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
   state = {
     weatherData: null,
     search: "",
@@ -33,6 +30,7 @@ class App extends Component {
   };
 
   componentDidMount() {
+    console.log("apikey", API_KEY);
     this.setState({ errorEncountered: false });
   }
 
@@ -59,13 +57,14 @@ class App extends Component {
   // for the entered city in the search textbox
   search = input => {
     axios
-      .get("weather?q=" + this.state.search + apikey)
+      .get("weather?q=" + this.state.search + API_KEY)
       .then(response => {
         this.setState({ weatherData: response.data }, () => {
           this.setState({ errorEncountered: false });
         });
       })
       .catch(error => {
+        console.log(error);
         this.setState({ errorEncountered: true });
       });
 
@@ -92,10 +91,6 @@ class App extends Component {
       this.setState({ units: FARENHEIT });
     }
   };
-
-  componentWillReceiveProps(nextProps) {}
-
-  componentWillUpdate(nextProps, nextState) {}
 
   render() {
     let results = null;
