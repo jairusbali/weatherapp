@@ -13,7 +13,7 @@ import FormControl from "@material-ui/core/FormControl";
 import CustomizedSnackbars from "../components/Snackbars/snackBarWarning";
 
 const API_KEY = "&APPID=" + process.env.REACT_APP_WEATHER_API_KEY;
-axios.defaults.baseURL = "http://api.openweathermap.org/data/2.5";
+axios.defaults.baseURL = "https://api.openweathermap.org/data/2.5";
 const weatherIconBaseURL = "http://openweathermap.org/img/w/";
 const CELCIUS = "Celcius";
 const FARENHEIT = "Farenheit";
@@ -126,10 +126,10 @@ class App extends Component {
 
     return (
       <div className="outer">
-        <h1>Weather API</h1>
+        <h1>Weather Application</h1>
         <h4>
-          Simple weather application using the OpenWeatherMap API to view the
-          current weather in the searched city.
+          Using the OpenWeatherMap API to view the current weather in the
+          location searched.
         </h4>
         <FormControl className="App">
           <UserInput

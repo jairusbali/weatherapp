@@ -1,5 +1,5 @@
 # Simple weather app
 
-This application uses the Openweathermap weather API along with Material UI for the styling.
+This application uses the OpenWeatherMap weather API along with Material UI for the styling.
 
-[Live Preview]()
+[Live Preview](https://jairusbali.github.io/weatherapp)
