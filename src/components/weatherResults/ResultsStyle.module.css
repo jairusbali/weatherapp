@@ -1,0 +1,9 @@
+.WeatherResults {
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+
+  margin-top: 100px;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
