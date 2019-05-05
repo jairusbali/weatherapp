@@ -14,7 +14,7 @@ import CustomizedSnackbars from "../components/Snackbars/snackBarWarning";
 
 const API_KEY = "&APPID=" + process.env.REACT_APP_WEATHER_API_KEY;
 axios.defaults.baseURL = "https://api.openweathermap.org/data/2.5";
-const weatherIconBaseURL = "http://openweathermap.org/img/w/";
+const weatherIconBaseURL = "https://openweathermap.org/img/w/";
 const CELCIUS = "Celcius";
 const FARENHEIT = "Farenheit";
 const WARNING = "warning";
