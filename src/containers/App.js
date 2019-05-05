@@ -30,7 +30,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-    console.log("apikey", API_KEY);
     this.setState({ errorEncountered: false });
   }
 
@@ -95,7 +94,6 @@ class App extends Component {
   render() {
     let results = null;
 
-    console.log("in render", this.state);
     if (this.state.weatherData && this.state.searchClicked) {
       let { name, weather, main } = this.state.weatherData;
 
