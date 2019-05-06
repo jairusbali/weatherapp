@@ -7,4 +7,4 @@ This application uses the OpenWeatherMap API along with Material UI for the styl
 * Material UI
 * Axios 
 
-<a href="https://jairusbali.github.io/weatherapp/" target="_blank">Live Preview</a>
+[Live Preview](https://jairusbali.github.io/weatherapp/)
