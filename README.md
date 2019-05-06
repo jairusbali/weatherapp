@@ -1,5 +1,9 @@
 # Simple weather app
 
-This application uses the Openweathermap weather API along with Material UI for the styling.
+This application uses the OpenWeatherMap API along with Material UI for the styling.
 
-[Live Preview]()
+## Technologies used:
+* ReactJS
+* Material UI
+
+[Live Preview](https://jairusbali.github.io/weatherapp/)
