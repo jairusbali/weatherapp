@@ -6,4 +6,4 @@ This application uses the OpenWeatherMap API along with Material UI for the styl
 * ReactJS
 * Material UI
 
-[Live Preview](https://jairusbali.github.io/weatherapp/)
+<a href="https://jairusbali.github.io/weatherapp/" target="_blank">Live Preview</a>
